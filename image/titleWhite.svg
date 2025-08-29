@@ -1,21 +1,21 @@
 <svg width="1893" height="500" viewBox="0 0 1893 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="100" y="400" width="100" height="100" fill="black"/>
-<rect x="100" y="100" width="100" height="100" fill="black"/>
-<rect x="200" y="200" width="100" height="200" fill="black"/>
-<rect x="400" y="200" width="100" height="300" fill="black"/>
-<rect x="600" y="100" width="100" height="300" fill="black"/>
-<rect x="1293" y="200" width="100" height="100" fill="black"/>
-<rect x="1386" y="100" width="100" height="100" fill="black"/>
-<rect x="1793" y="300" width="100" height="100" fill="black"/>
-<rect x="1586" y="100" width="100" height="100" fill="black"/>
-<rect x="1586" y="400" width="200" height="100" fill="black"/>
-<rect x="1586" y="200" width="200" height="100" fill="black"/>
-<rect x="1686" width="200" height="100" fill="black"/>
-<rect x="1393" y="300" width="100" height="200" fill="black"/>
-<rect x="1193" y="100" width="100" height="400" fill="black"/>
-<rect x="800" y="200" width="100" height="200" fill="black"/>
-<rect x="900" y="400" width="200" height="100" fill="black"/>
-<rect x="900" y="100" width="200" height="100" fill="black"/>
-<rect x="500" y="400" width="200" height="100" fill="black"/>
-<rect y="100" width="100" height="400" fill="black"/>
+<rect x="100" y="400" width="100" height="100" fill="white"/>
+<rect x="100" y="100" width="100" height="100" fill="white"/>
+<rect x="200" y="200" width="100" height="200" fill="white"/>
+<rect x="400" y="200" width="100" height="300" fill="white"/>
+<rect x="600" y="100" width="100" height="300" fill="white"/>
+<rect x="1293" y="200" width="100" height="100" fill="white"/>
+<rect x="1386" y="100" width="100" height="100" fill="white"/>
+<rect x="1793" y="300" width="100" height="100" fill="white"/>
+<rect x="1586" y="100" width="100" height="100" fill="white"/>
+<rect x="1586" y="400" width="200" height="100" fill="white"/>
+<rect x="1586" y="200" width="200" height="100" fill="white"/>
+<rect x="1686" width="200" height="100" fill="white"/>
+<rect x="1393" y="300" width="100" height="200" fill="white"/>
+<rect x="1193" y="100" width="100" height="400" fill="white"/>
+<rect x="800" y="200" width="100" height="200" fill="white"/>
+<rect x="900" y="400" width="200" height="100" fill="white"/>
+<rect x="900" y="100" width="200" height="100" fill="white"/>
+<rect x="500" y="400" width="200" height="100" fill="white"/>
+<rect y="100" width="100" height="400" fill="white"/>
 </svg>
