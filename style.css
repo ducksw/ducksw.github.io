@@ -98,3 +98,7 @@ svg {
     width: 20px;
     height: 25px;
 }
+
+details {
+    cursor: pointer;
+}

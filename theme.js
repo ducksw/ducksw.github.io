@@ -49,6 +49,8 @@ function theme() {
         setLinksColor(linkColor);
         activiy = true;
     }
+
+    console.log("activiy", activiy);
 }
 
 theme();
