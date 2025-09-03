@@ -1,3 +1,8 @@
+function aea() {
+  const msg = "En proceso...";
+  alert(msg);
+}
+
 function theme() {
   let activiy = false;
 
@@ -19,14 +24,14 @@ function theme() {
       body.style.color = "white";
       image.src = "image/titleWhite.svg";
       btn.style.backgroundImage = "url('https://i.pinimg.com/736x/ff/8e/d3/ff8ed36732187366817f888356f32735.jpg')";
-      setLinksColor("brown");
+      setLinksColor("red");
 
       localStorage.setItem("theme", JSON.stringify({
         bg: "black",
         color: "white",
         img: "image/titleWhite.svg",
         btn: "https://i.pinimg.com/736x/ff/8e/d3/ff8ed36732187366817f888356f32735.jpg",
-        linkColor: "brown"
+        linkColor: "red"
       }));
     } else {
       body.style.backgroundColor = "white";
@@ -54,4 +59,3 @@ function theme() {
 }
 
 theme();
-

@@ -41,11 +41,11 @@ gap: 50px;
 
 .image {
     max-width: 100%;
-    width: 300px;
-    height: 300px;
+    width: 450px;
+    height: 250px;
     border-radius: 5px;
     border: 3px solid brown;
-    padding: 5px;
+    /* padding: 5px; */
     background-color: black;
 }
 
@@ -101,4 +101,22 @@ svg {
 
 details {
     cursor: pointer;
+}
+
+.modal {
+    background-color: black;
+    color: white;
+}
+
+.modal a {
+    color: red;
+}
+
+pre {
+    font-size: 14pt;
+}
+
+#aea {
+    color: black;
+    text-decoration: none;
 }
