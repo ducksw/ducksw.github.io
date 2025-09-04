@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
 body {
-    font-family: monospace;
+    font-family: "Cascadia Mono", monospace;
     font-size: 13px;
 }
 
@@ -23,6 +24,7 @@ a {
 
 pre {
     white-space: pre-wrap;
+    font-family: "Cascadia Mono", monospace;
 }
 
 /* .link {
@@ -106,6 +108,7 @@ details {
 .modal {
     background-color: black;
     color: white;
+    border: 1px solid red;
 }
 
 .modal a {
