@@ -116,12 +116,16 @@ details {
 }
 
 pre {
-    font-size: 14pt;
+    font-size: 1.2em;
 }
 
 #aea {
     color: black;
     text-decoration: none;
+}
+
+.tag {
+    color: #999999;
 }
 
 @media only screen and (max-width: 600px) {
