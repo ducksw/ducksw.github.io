@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Detector de Objetos</title>
+    <meta charset="UTF-8">
+    <title>Detector de Objetos</title>
 </head>
 
 <body>
@@ -21,44 +20,44 @@ const ctx = canvas.getContext('2d');
 canvas.style.width = "2000px";
 
 async function setupCamera() {
-  try {
-    const stream = await navigator.mediaDevices.getUserMedia({ video: true });
-    video.srcObject = stream;
-    return new Promise((resolve) => {
-      video.onloadedmetadata = () => {
-        video.play();
-        resolve();
-      };
-    });
-  } catch (err) {
-    console.error("No se pudo acceder a la cámara:", err);
-  }
+    try {
+        const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+        video.srcObject = stream;
+        return new Promise((resolve) => {
+            video.onloadedmetadata = () => {
+                video.play();
+                resolve();
+            };
+        });
+    } catch (err) {
+        console.error("No se pudo acceder a la cámara:", err);
+    }
 }
 
 async function runObjectDetection() {
-  await setupCamera();
-  const model = await cocoSsd.load();
-  console.log("Modelo cargado");
+    await setupCamera();
+    const model = await cocoSsd.load();
+    console.log("Modelo cargado");
 
-  async function detectFrame() {
-    const predictions = await model.detect(video);
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.drawImage(video, 0, 0);
+    async function detectFrame() {
+        const predictions = await model.detect(video);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(video, 0, 0);
 
-    predictions.forEach(pred => {
-      const [x, y, width, height] = pred.bbox;
-      ctx.strokeStyle = "red";
-      ctx.lineWidth = 2;
-      ctx.strokeRect(x, y, width, height);
-      ctx.font = "18px monospace";
-      ctx.fillStyle = "blue";
-      ctx.fillText(pred.class, x, y > 20 ? y - 5 : y + 20);
-    });
+        predictions.forEach(pred => {
+            const [x, y, width, height] = pred.bbox;
+            ctx.strokeStyle = "red";
+            ctx.lineWidth = 2;
+            ctx.strokeRect(x, y, width, height);
+            ctx.font = "18px monospace";
+            ctx.fillStyle = "blue";
+            ctx.fillText(pred.class, x, y > 20 ? y - 5 : y + 20);
+        });
 
-    requestAnimationFrame(detectFrame);
-  }
+        requestAnimationFrame(detectFrame);
+    }
 
-  detectFrame();
+    detectFrame();
 }
 
 runObjectDetection();

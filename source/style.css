@@ -43,11 +43,11 @@ gap: 50px;
 
 .image {
     max-width: 100%;
-    width: 460px;
-    height: 260px;
+    width: 300px;
+    height: 300px;
     border-radius: 5px;
     border: 3px solid brown;
-    /* padding: 5px; */
+    padding: 5px;
     background-color: black;
 }
 

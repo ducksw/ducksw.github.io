@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: black;
+}
+
+h1 {
+    color: aqua;
+    text-align: center;
+}
+
+main {
+    display: flex;
+}
+
+.box {
+    position: relative;
+    display: flex;
+    width: 700px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #014C76; /* color base */
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* top:0; right:0; bottom:0; left:0 */
+    background: url("XD.webp") no-repeat center center;
+    background-size: 250px 200px;
+    margin-left: 200px;
+    margin-top: 80px;
+    border-radius: 5px;
+    opacity: 0.2; /* marca de agua suave */
+
+        -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: cover;
+
+    mask-image: radial-gradient(circle, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: cover;
+    z-index: 0;
+}
+
+.box > * {
+    position: relative;
+    z-index: 1; /* asegura que el contenido quede encima */
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: black;
+}
+
+.photo {
+    display: flex;
+}
+
+#img {
+    max-width: 100%;
+    width: 200px;
+    height: 250px;
+    background-color: #111111;
+    /*background-color: #487BC7;*/
+}
+
+.barcode {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    background: white;
+    align-items: center;
+    margin-top: 10px;
+}
+.bar {
+    width: 5px;
+    height: 50px;
+    background: black;
+}
+.bar.thin {
+    width: 2px;
+}
+.bar.thick {
+    width: 8px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.title span {
+    font-family: "Bungee", sans-serif;
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    text-shadow: 5px 3px 1px black;
+}
+
+.header-dat {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Roboto";
+}
+
+.osi {
+    display: flex;
+    flex-direction: column;
+}
+
+.tag {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.displayName {
+    text-align: center;
+    font-family: "Permanent Marker", cursive;
+    font-size: 70px;
+    text-shadow:
+    -4px -4px 0 black,  
+     4px -4px 0 black,  
+    -4px  4px 0 black,  
+     4px  4px 0 black;
+     color: #017A8C;
+ }
+
+.other_info {
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+     font-family: "Roboto";
+     font-size: 25px;
+}
+
+.other_info b {
+     color: #D9E4D3;
+}
+
