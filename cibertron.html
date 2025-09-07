@@ -1,97 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="source/ciber.css">
-    <title>CIBERTRON</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="source/ciber.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <title>CIBERTRON</title>
 </head>
 <body>
 <h1>CIBERTRON CARNET</h1>
 
-<main>
-    <div class="box">
-        <div id="banner"></div>
-        <div class="profile">
-            <div class="photo">
-                <img src="" id="img">
-            </div>
-            <div class="barcode">
-                <div class="bar thick"></div>
-                <div class="bar thin"></div>
-                <div class="bar"></div>
-                <div class="bar thick"></div>
-                <div class="bar thin"></div>
-                <div class="bar"></div>
-                <div class="bar thick"></div>
-                <div class="bar thin"></div>
-                <div class="bar"></div>
-                <div class="bar thick"></div>
-                <div class="bar thin"></div>
-                <div class="bar"></div>
-                <div class="bar thick"></div>
-                <div class="bar thin"></div>
-                <div class="bar"></div>
-                <div class="bar thick"></div>
-                <div class="bar thin"></div>
-                <div class="bar"></div>
-                <div class="bar thick"></div>
-                <div class="bar thin"></div>
-                <div class="bar"></div>
-                <div class="bar thick"></div>
-                <div class="bar thin"></div>
-                <div class="bar"></div>
-                <div class="bar thick"></div>
-                <div class="bar thin"></div>
-                <div class="bar"></div>
-                <div class="bar thick"></div>
-                <div class="bar thin"></div>
-            </div>
-        </div>
-        
-        <section>
-            <div class="title">
-                <span>PORTAL CIBERTEC</span>
-            </div>
+<section>
+  <div>
+    Ingresa tu nombre/apodo : 
+    <input type="text" id="name">
+  </div>
 
-            <div class="header-dat">
-                <div class="osi">
-                    <span>Code #</span>
-                    <span id="code" class="tag">202223946</span>
-                </div>
-                <div class="osi">
-                    <span>Class</span>
-                    <span class="tag"></span>
-                </div>
-                <div class="osi">
-                    <span>Expire</span>
-                    <span class="tag">Never</span>
-                </div>
-                <div class="osi">
-                    <span>Restrictions</span>
-                    <span class="tag">aea</span>
-                </div>
-            </div>
+  <div>
+    Código de estudiante siquieresxd : 
+    <input type="text" id="codigo" placeholder="No pongas la 'i' xd">
+  </div>
 
+  <div>
+    Ingresa fecha de nacimiento
+    <input type="date" class="date" id="date">
+  </div>
 
-            <div class="displayName">
-                <span>Fabrizio</span>
-            </div>
+  <div>
+    Seleccione una imagen
+    <input type="file" id="file" accept="image/*">
+  </div>
 
-            <div class="other_info">
-                <div>
-                    <span>DOB</span>
-                    <b>05/09/2025</b>
-                </div>
-                <div>
-                    <span>EXP</span>
-                    <b>NEVER</b>
-                </div>
-            </div>
+  <button id="btn_add">Agregar datos</button>
+</section>
 
-        </section>
+<main id="box">
+<div class="box">
+  <div class="box2">
+    <div class="photo">
+      <img id="img" src="" alt="no image">
     </div>
+      <div class="barcode">
+        <div class="bar thick"></div>
+        <div class="bar thin"></div>
+        <div class="bar"></div>
+        <div class="bar thick"></div>
+        <div class="bar thin"></div>
+        <div class="bar"></div>
+        <div class="bar thick"></div>
+        <div class="bar thin"></div>
+        <div class="bar"></div>
+        <div class="bar thick"></div>
+        <div class="bar thin"></div>
+        <div class="bar"></div>
+        <div class="bar thick"></div>
+        <div class="bar thin"></div>
+        <div class="bar"></div>
+        <div class="bar thick"></div>
+        <div class="bar thin"></div>
+        <div class="bar"></div>
+        <div class="bar thick"></div>
+        <div class="bar thin"></div>
+        <div class="bar"></div>
+        <div class="bar thick"></div>
+        <div class="bar thin"></div>
+        <div class="bar"></div>
+        <div class="bar thick"></div>
+        <div class="bar thin"></div>
+        <div class="bar"></div>
+        <div class="bar thick"></div>
+        <div class="bar thin"></div>
+        <div class="bar"></div>
+    </div>
+    <div class="dat">
+      <span id="nm">name</span>
+      <span>892 MOMONA ST</span>
+      <span>HONOLULU, HI 96820</span>
+    </div>
+  </div>
+
+  <div class="box3">
+    <div class="head">
+      <span class="title">CIBERTRON</span>
+      <img src="source/osiiii.jpg" class="overlay-img">
+      <!--
+      <div class="mini-title">
+        <span>DRIVER</span>
+        <span>LICENSE</span>
+      </div>
+      -->
+    </div>
+
+    <div class="info">
+      <div class="number">
+        <span>CÓDIGO <b id="code"></b></span>
+      </div>
+
+      <div class="dob">
+        <span>DOB <b id="res-naci"></b> EXP <b>06/03/2050</b></span>
+      </div>
+
+      <div class="aea">
+        <div class="xd">
+          <span>HT</span>
+          <span>5-10</span>
+        </div>
+        <div class="xd">
+          <span>WT</span>
+          <span>150</span>
+        </div>
+        <div class="xd">
+          <span>HAIR</span>
+          <span>BRO</span>
+        </div>
+        <div class="xd">
+          <span>EYES</span>
+          <span>BRO</span>
+        </div>
+        <div class="xd">
+          <span>SEX</span>
+          <span>YES</span>
+        </div>
+        <div class="xd">
+          <span>CTY</span>
+          <span>0</span>
+        </div>
+      </div>
+
+      <div class="aea1">
+        <div class="xd1">
+          <span>ISSUE</span>
+          <span>06/09/2025</span>
+        </div>
+        <div class="xd1">
+          <span>DATE</span>
+          <span></span>
+        </div>
+        <div class="xd1">
+          <span>CLASS</span>
+          <span>3</span>
+        </div>
+        <div class="xd1">
+          <span>RESTR</span>
+          <span></span>
+        </div>
+        <div class="xd1">
+          <span>ENDORSE</span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="firma">
+        <span id="firm">name</span>
+      </div>
+
+    </div>
+  </div>
+</div>
 </main>
+
+<center>
+<button id="capturar" onclick="capture()">Descargar Imagen</button>
+<button id="compartir" onclick="copiarContenido()">Compartir Enlace</button>
+</center>
+
+<div id="txt" style="color: black"></div>
+
 
 <script src="source/ciber.js"></script>
 </body>
