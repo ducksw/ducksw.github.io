@@ -56,6 +56,8 @@ function nac() {
   let dateInput = document.getElementById('date');
   let output = document.getElementById('res-naci');
 
+  if (!dateInput.value) return 0;
+
   let dt = dateInput.value
 
   output.innerHTML = dt;
